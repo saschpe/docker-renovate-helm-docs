@@ -10,7 +10,7 @@
 #   $ ./scripts/build --base 3.18
 #
 
-ARG base=43.214-full
+ARG base=43.216-full
 
 FROM renovate/renovate:${base}
 LABEL maintainer="Sascha Peilicke <sascha@peilicke.de"
