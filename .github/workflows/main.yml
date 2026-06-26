@@ -29,7 +29,7 @@ jobs:
     strategy:
       max-parallel: 3
       matrix:
-        base: [ 43.226-full ]
+        base: [ 43.243.2-full ]
     permissions:
       packages: write
     steps:
