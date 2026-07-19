@@ -16,7 +16,9 @@ usage() {
   printf "Usage: %s [OPTIONS]\n" "${0}"
   printf "Options:\n"
   printf "  --base VERSION  (default: %s)\n" "${DEFAULT_BASE}"
+  printf "  --docker        (optional, build with Docker)"
   printf "  --platforms     (default: %s)\n" "${DEFAULT_PLATFORMS}"
+  printf "  --podman        (optional, build with Podman)"
   printf "  --push          (optional, upload images to Docker Hub)\n"
   printf "  --verbose       (optional)\n"
   exit 1
