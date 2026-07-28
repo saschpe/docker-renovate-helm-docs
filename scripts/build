@@ -16,6 +16,7 @@ usage() {
   printf "Usage: %s [OPTIONS]\n" "${0}"
   printf "Options:\n"
   printf "  --base VERSION  (default: %s)\n" "${DEFAULT_BASE}"
+  printf "  --container     (optional, build with Apple Container)\n"
   printf "  --docker        (optional, build with Docker)"
   printf "  --platforms     (default: %s)\n" "${DEFAULT_PLATFORMS}"
   printf "  --podman        (optional, build with Podman)"
@@ -34,6 +35,7 @@ while [ $# -gt 0 ]; do
   key="$1"
   case $key in
   --base) base="$2" shift ;; # past argument
+  --container) tool="container" ;;
   --docker) tool="docker" ;;
   --platforms) platforms="$2" shift ;; # past argument
   --podman) tool="podman" ;;
