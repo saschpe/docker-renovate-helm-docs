@@ -7,10 +7,10 @@
 #
 # Build with custom arguments:
 #
-#   $ ./scripts/build --base 44.17.4-full
+#   $ ./scripts/build --base 44.48.3-full
 #
 
-ARG base=44.17.4-full
+ARG base=44.48.3-full
 
 FROM renovate/renovate:${base}
 LABEL maintainer="Sascha Peilicke <sascha@peilicke.de"

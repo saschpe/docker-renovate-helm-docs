@@ -10,7 +10,7 @@ Renovate OCI image with pre-installed helm-docs.
 ## Usage
 
 ```shell
-docker run --rm saschpe/renovate-helm-docs:44.17.4-full
+docker run --rm saschpe/renovate-helm-docs:44.48.3-full
 ```
 
 ## Building
